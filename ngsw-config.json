@@ -12,6 +12,9 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "https://www.techiediaries.com/api/data.json"
         ]
       }
     }, {
