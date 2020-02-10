@@ -14,7 +14,7 @@
           "/*.js"
         ],
         "urls": [
-          "https://www.techiediaries.com/api/data.json"
+          
         ]
       }
     }, {
@@ -28,5 +28,17 @@
         ]
       }
     }
-  ]
+  ],
+  "dataGroups": [{
+    "name": "api-freshness",
+    "urls": [
+      "https://www.techiediaries.com/api/data.json"
+    ],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "1h",
+      "timeout": "10s",
+      "strategy": "freshness"
+    }
+  }]
 }

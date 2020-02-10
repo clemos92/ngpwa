@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1581292393946,
+  "timestamp": 1581296610640,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -19,9 +19,7 @@
         "/runtime-es5.c5fa8325f89fc516600b.js",
         "/styles.4d30794be43c214224a5.css"
       ],
-      "patterns": [
-        "https:\\/\\/www\\.techiediaries\\.com\\/api\\/data\\.json"
-      ]
+      "patterns": []
     },
     {
       "name": "assets",
@@ -40,7 +38,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "patterns": [
+        "https:\\/\\/www\\.techiediaries\\.com\\/api\\/data\\.json"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 3600000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
